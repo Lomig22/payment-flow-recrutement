@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recrutement assistant(e) Instagram — Payment Flow</title>
+<meta name="description" content="Payment Flow recrute un(e) assistant(e) Instagram à Madagascar. Poste 100 % à distance, 150 $ par mois fixes, formation fournie. Regarde la vidéo et postule.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Recrutement assistant(e) Instagram — Payment Flow">
+<meta property="og:description" content="Deviens l'assistant(e) Instagram d'une agence française et gagne 150 $ par mois, fixes, depuis chez toi. Poste 100 % à distance.">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#0B2A5B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','{{META_PIXEL_ID}}');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id={{META_PIXEL_ID}}&ev=PageView&noscript=1"></noscript>
+<style>
+:root{
+  --navy:#0B2A5B;
+  --navy-deep:#071D40;
+  --blue:#1F6FEB;
+  --blue-dark:#155BC4;
+  --ink:#1B1F2A;
+  --muted:#5B6270;
+  --line:#E3E7EE;
+  --soft:#F3F6FB;
+  --white:#FFFFFF;
+  --radius:10px;
+  --max:860px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.55;color:var(--ink);background:var(--white);
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:1.6rem;margin-bottom:1.25rem}
+p{margin-bottom:1rem}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+.center{text-align:center}
+
+.announce{
+  background:var(--blue);color:#fff;text-align:center;
+  font-size:.875rem;font-weight:600;padding:9px 16px;letter-spacing:.01em;
+}
+
+.hero{background:var(--navy);color:#fff;padding:44px 0 40px}
+.hero .pre{
+  font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:#9DBBFF;margin-bottom:14px;
+}
+.hero h1{font-size:1.85rem;margin-bottom:16px}
+.hero .sub{font-size:1.05rem;color:#DCE5F5;max-width:640px;margin:0 auto 14px}
+.hero .proof{font-size:.85rem;color:#9DBBFF;font-weight:600;margin-bottom:0}
+
+.vsl{background:var(--navy);padding:0 0 40px}
+.vsl .label{
+  color:#fff;font-weight:600;font-size:.95rem;text-align:center;margin-bottom:14px;
+}
+.video{
+  position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;
+  border-radius:12px;background:var(--navy-deep);
+  box-shadow:0 12px 32px rgba(0,0,0,.35);
+}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.poster{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 50% 45%,#12407F 0%,var(--navy-deep) 70%);
+  cursor:pointer;z-index:1;
+}
+.poster.hide{display:none}
+.play{
+  width:72px;height:72px;border-radius:50%;background:var(--blue);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(31,111,235,.5);
+}
+.play::after{
+  content:"";display:block;margin-left:5px;
+  border-style:solid;border-width:13px 0 13px 22px;border-color:transparent transparent transparent #fff;
+}
+
+.cta-block{margin-top:28px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;min-height:56px;padding:14px 24px;
+  background:var(--blue);color:#fff;text-decoration:none;
+  font-weight:800;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;
+  border-radius:var(--radius);border:0;cursor:pointer;
+  box-shadow:0 6px 18px rgba(31,111,235,.35);
+  transition:background .15s ease,transform .15s ease;
+}
+.btn:hover{background:var(--blue-dark)}
+.btn:active{transform:translateY(1px)}
+.micro{font-size:.85rem;text-align:center;margin:10px 0 0;color:#B8C7E6}
+.section-light .micro{color:var(--muted)}
+
+.cards{display:grid;gap:14px;grid-template-columns:1fr}
+.card{
+  border:1px solid var(--line);border-radius:12px;padding:20px;
+  display:flex;gap:14px;align-items:flex-start;background:#fff;
+}
+.card .ico{
+  flex:0 0 44px;width:44px;height:44px;border-radius:10px;background:var(--soft);
+  display:flex;align-items:center;justify-content:center;color:var(--blue);
+}
+.card p{margin:0;font-weight:600}
+
+.checks{list-style:none}
+.checks li{
+  display:flex;gap:12px;align-items:flex-start;padding:10px 0;
+  border-bottom:1px solid var(--line);font-size:1.02rem;
+}
+.checks li:last-child{border-bottom:0}
+.checks svg{flex:0 0 24px;margin-top:2px;color:var(--blue)}
+
+.filter{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.filter ul{list-style:none}
+.filter li{
+  display:flex;gap:12px;align-items:flex-start;padding:10px 0;font-weight:600;
+}
+.filter li svg{flex:0 0 24px;margin-top:2px;color:#C0392B}
+.filter .counter{
+  margin-top:20px;padding:14px 18px;background:#fff;border-left:4px solid var(--blue);
+  border-radius:0 8px 8px 0;font-weight:600;
+}
+
+.steps{display:grid;gap:18px;grid-template-columns:1fr;counter-reset:step}
+.step{position:relative;padding:22px 20px 20px;border:1px solid var(--line);border-radius:12px}
+.step .num{
+  width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;
+  font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px;
+}
+.step h3{font-size:1.05rem;margin-bottom:6px}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+
+.about{background:var(--soft)}
+.about .row{display:flex;gap:20px;align-items:center;flex-direction:column;text-align:center}
+.about .photo{
+  width:112px;height:112px;border-radius:50%;object-fit:cover;flex:0 0 112px;
+  background:#D6DEEB;border:4px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+.about h2{margin-bottom:10px}
+.about p{margin:0}
+
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:16px 36px 16px 0;font-weight:600;
+  position:relative;font-size:1.02rem;min-height:44px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  font-size:1.5rem;font-weight:400;color:var(--blue);line-height:1;
+}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 0 16px;color:var(--muted)}
+
+.final{background:var(--navy);color:#fff}
+.final h2{font-size:1.4rem;margin-bottom:22px}
+
+footer{padding:28px 0 100px;font-size:.85rem;color:var(--muted);text-align:center}
+footer p{margin-bottom:6px}
+footer a{color:var(--muted)}
+
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;padding:10px 16px;
+  background:rgba(255,255,255,.96);border-top:1px solid var(--line);
+  transform:translateY(110%);transition:transform .25s ease;z-index:50;
+  padding-bottom:calc(10px + env(safe-area-inset-bottom));
+}
+.sticky.show{transform:translateY(0)}
+.sticky .btn{min-height:52px;font-size:1rem;box-shadow:none}
+
+@media (min-width:640px){
+  .hero{padding:64px 0 48px}
+  .hero h1{font-size:2.5rem}
+  h2{font-size:1.9rem}
+  .btn{width:auto;min-width:340px;margin:0 auto}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .about .row{flex-direction:row;text-align:left}
+  section{padding:64px 0}
+  footer{padding-bottom:40px}
+}
+@media (min-width:900px){
+  .sticky{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Recrutement ouvert — Madagascar — poste 100 % à distance</div>
+
+<header class="hero center">
+  <div class="wrap">
+    <p class="pre">Pour les Malgaches qui écrivent un français impeccable</p>
+    <h1>Deviens l'assistant(e) Instagram d'une agence française et gagne 150 $ par mois, fixes, depuis chez toi</h1>
+    <p class="sub">Pas de vente, pas d'appel. Tu suis une méthode précise, tu envoies des messages en français, tu remplis ton tableau chaque jour. On te forme.</p>
+    <p class="proof">Agence française · +250 artisans accompagnés · Paiement chaque mois, sans condition</p>
+  </div>
+</header>
+
+<main>
+
+<section class="vsl" id="video">
+  <div class="wrap">
+    <p class="label">▶ Regarde cette vidéo de 4 minutes avant de postuler</p>
+    <div class="video">
+      <div class="poster" id="poster" role="button" aria-label="Lancer la vidéo" tabindex="0"><div class="play"></div></div>
+      <iframe id="vsl" data-src="https://www.loom.com/embed/7754477746724b34baf571cf443c1426?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" title="Vidéo de présentation du poste" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="cta-block">
+      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+      <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
+    </div>
+  </div>
+</section>
+
+<section id="missions">
+  <div class="wrap">
+    <h2>Ce que tu feras concrètement</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <p>Faire vivre des comptes Instagram (warm-up, publications, interactions)</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+        <p>Suivre et contacter des artisans français avec nos messages types</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+        <p>Répondre aux conversations selon notre méthode écrite</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></div>
+        <p>Remplir ton tableau de suivi chaque jour avant 19 h (heure de Paris)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offre">
+  <div class="wrap">
+    <h2>Ce qu'on te donne</h2>
+    <ul class="checks">
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span><strong>150 $ par mois, fixes</strong>, versés chaque mois sans condition de résultat</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span>Une formation complète en vidéo + une méthode écrite étape par étape</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span>Un point chaque semaine avec le fondateur</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span>Un poste stable de 6 mois minimum, renouvelable</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span>La possibilité d'évoluer (prime sur rendez-vous pris, gestion de plusieurs comptes)</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="filter" id="filtre">
+  <div class="wrap">
+    <h2>Ce poste n'est PAS pour toi si…</h2>
+    <ul>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>tu fais des fautes de français dans tes messages</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>tu n'as pas d'ordinateur ET de smartphone à toi, avec une connexion stable</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>tu n'es pas disponible au moins 6 mois</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>tu as besoin qu'on te dise quoi faire toutes les heures</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>tu penses pouvoir improviser au lieu de suivre la méthode à la lettre</span></li>
+    </ul>
+    <p class="counter">Si tu te reconnais dans aucun de ces points, continue.</p>
+  </div>
+</section>
+
+<section id="postuler">
+  <div class="wrap">
+    <h2>Comment postuler</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Tu regardes la vidéo ci-dessus</h3>
+        <p>4 minutes pour comprendre le poste, la méthode et ce qu'on attend de toi.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Tu remplis le formulaire</h3>
+        <p>Âge, matériel, photo de ton espace de travail avec l'ordinateur allumé, capture d'écran speedtest.net, et en bonus une courte vidéo face caméra (fortement recommandée).</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>On te répond sous 72 h</h3>
+        <p>Puis un court échange vidéo avec Lomig si ton profil correspond.</p>
+      </div>
+    </div>
+    <div class="cta-block section-light">
+      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+      <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="agence">
+  <div class="wrap">
+    <div class="row">
+      <img class="photo" src="{{PHOTO_LOMIG}}" alt="Lomig Guéguéniat, fondateur de Payment Flow" width="112" height="112" loading="lazy">
+      <div>
+        <h2>Qui est derrière Payment Flow</h2>
+        <p>Payment Flow a été fondée par Lomig Guéguéniat. C'est une agence d'acquisition spécialisée en Google Ads et Meta Ads pour les artisans et PME du BTP. Basée à Bordeaux, elle a accompagné plus de 250 artisans partout en France.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>Questions fréquentes</h2>
+    <details>
+      <summary>Est-ce que je dois vendre ou appeler des gens ?</summary>
+      <div class="ans">Non. Tu n'appelles personne et tu ne vends rien. Tu envoies des messages écrits en suivant notre méthode.</div>
+    </details>
+    <details>
+      <summary>Comment suis-je payé(e) ?</summary>
+      <div class="ans">150 $ par mois, par virement chaque mois. Le moyen de paiement adapté à Madagascar est à convenir ensemble.</div>
+    </details>
+    <details>
+      <summary>Quels horaires ?</summary>
+      <div class="ans">À définir ensemble, en cohérence avec les heures ouvrées françaises. Compte environ 4 h par jour, du lundi au vendredi.</div>
+    </details>
+    <details>
+      <summary>Faut-il de l'expérience ?</summary>
+      <div class="ans">Non. Un français écrit irréprochable et de la rigueur, oui. On te forme sur tout le reste.</div>
+    </details>
+    <details>
+      <summary>Quel matériel faut-il ?</summary>
+      <div class="ans">Un ordinateur, un smartphone personnel et une connexion stable. Tu le prouveras dans le formulaire.</div>
+    </details>
+    <details>
+      <summary>Combien de personnes recrutez-vous ?</summary>
+      <div class="ans">1 à 2 personnes pour cette session.</div>
+    </details>
+  </div>
+</section>
+
+<section class="final center" id="final">
+  <div class="wrap">
+    <h2>Tu as regardé la vidéo et tu coches toutes les cases ?</h2>
+    <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+    <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Payment Flow — Bordeaux, France</strong></p>
+    <p><a href="{{MENTIONS_LEGALES_URL}}" rel="noopener">Mentions légales</a> · <a href="{{CONFIDENTIALITE_URL}}" rel="noopener">Politique de confidentialité</a></p>
+    <p>Ce site n'est pas affilié à Meta ou Instagram.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+</div>
+
+<script>
+(function(){
+  var iframe=document.getElementById('vsl');
+  var poster=document.getElementById('poster');
+  var loaded=false;
+  function loadVideo(autoplay){
+    if(loaded)return;
+    loaded=true;
+    var src=iframe.getAttribute('data-src');
+    iframe.src=autoplay?src+'&autoplay=1':src;
+    iframe.addEventListener('load',function(){poster.classList.add('hide');});
+  }
+  poster.addEventListener('click',function(){loadVideo(true);poster.classList.add('hide');});
+  poster.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();loadVideo(true);poster.classList.add('hide');}});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting){loadVideo(false);io.disconnect();}
+    },{rootMargin:'200px'});
+    io.observe(iframe);
+  }else{
+    loadVideo(false);
+  }
+
+  var sticky=document.getElementById('sticky');
+  var finalCta=document.getElementById('final');
+  function onScroll(){
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    var pct=max>0?(window.pageYOffset/max):0;
+    var nearEnd=finalCta.getBoundingClientRect().top<window.innerHeight;
+    sticky.classList.toggle('show',pct>0.2&&!nearEnd);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  var ctas=document.querySelectorAll('.cta');
+  for(var i=0;i<ctas.length;i++){
+    ctas[i].addEventListener('click',function(){
+      if(typeof fbq==='function'){fbq('track','Lead');}
+    });
+  }
+})();
+</script>
+</body>
+</html>
