@@ -221,7 +221,7 @@ footer a{color:var(--muted)}
       <iframe id="vsl" data-src="https://www.loom.com/embed/7754477746724b34baf571cf443c1426?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" title="Vidéo de présentation du poste" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
     <div class="cta-block">
-      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener" onclick="fbq('track', 'Lead');">Postuler maintenant →</a>
       <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
     </div>
   </div>
@@ -299,7 +299,7 @@ footer a{color:var(--muted)}
       </div>
     </div>
     <div class="cta-block section-light">
-      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+      <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener" onclick="fbq('track', 'Lead');">Postuler maintenant →</a>
       <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
     </div>
   </div>
@@ -350,7 +350,7 @@ footer a{color:var(--muted)}
 <section class="final center" id="final">
   <div class="wrap">
     <h2>Tu as regardé la vidéo et tu coches toutes les cases ?</h2>
-    <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+    <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener" onclick="fbq('track', 'Lead');">Postuler maintenant →</a>
     <p class="micro">Formulaire de 5 minutes · Réponse sous 72 h</p>
   </div>
 </section>
@@ -366,7 +366,7 @@ footer a{color:var(--muted)}
 </footer>
 
 <div class="sticky" id="sticky">
-  <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener">Postuler maintenant →</a>
+  <a class="btn cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdSSgTTCriyddhZICwumq6G91RuenfetjmDgV_76N47sl7tvw/viewform?usp=header" target="_blank" rel="noopener" onclick="fbq('track', 'Lead');">Postuler maintenant →</a>
 </div>
 
 <script>
@@ -403,13 +403,6 @@ footer a{color:var(--muted)}
   }
   window.addEventListener('scroll',onScroll,{passive:true});
   onScroll();
-
-  var ctas=document.querySelectorAll('.cta');
-  for(var i=0;i<ctas.length;i++){
-    ctas[i].addEventListener('click',function(){
-      if(typeof fbq==='function'){fbq('track','Lead');}
-    });
-  }
 })();
 </script>
 </body>
